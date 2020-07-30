@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Все санатории КМВ</title>
+    <link rel="icon" href="./images/icon-resort.png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./scripts/index.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="logo-menu">
+          <img class="logo" src="./images/logo_alt.png" alt="Логотип сайта" />
+          <div class="menu"><img class="menu-bars" src="./images/sidemenu_btn.png"></div>
+        </div>
+      </header>
+      <main>
+        <div class="intro">
+          <h1 class="intro-head-text">Мы помогаем выбирать правильные санатории более 6 лет!</h1>
+          <p class="intro-text">Лечение и отдых в санаториях КавМинВод</p>
+        </div>
+        <div class="search-form">
+          <h2>Поиск санатория по параметрам</h2>
+          <form id="FormSearchSans" action="#" method="get" >
+            <select name="select-city" id="select-city" >
+              <option selected disabled>Выберите город</option>
+              <option value="essentuki">Ессентуки</option>
+              <option value="geleznovock">Железноводск</option>
+              <option value="pyatigorsk">Пятигорск</option>
+              <option value="kislovodsk">Кисловодск</option>
+            </select>
+            <select name="select-profile" id="select-profile">
+              <option selected disabled>Выберите профиль</option>
+              <option value="gkt">Желудочно-кишечный тракт</option>
+              <option value="ods">Опорно-двигательная система</option>
+              <option value="gs">Желчевыводящая система</option>
+              <option value="sss">Сердечно-сосудистая система</option>
+              <option value="oft">Офтальмология</option>
+              <option value="ms">Мочеполовая система</option>
+              <option value="og">Ожирение/похудение</option>
+              <option value="zp">Заболевания печени</option>
+              <option value="ns">Нервная система</option>
+              <option value="uro">Урология</option>
+              <option value="sd">Сахарный диабет</option>
+              <option value="gin">Гинекология</option>
+              <option value="kms">Костно-мышечная система</option>
+              <option value="ps">Пищеварительная система</option>
+              <option value="es">Эндокринная система</option>
+              <option value="ims">Иммунная система</option>
+              <option value="alrg">Аллергология</option>
+              <option value="lor">ЛОР</option>
+              <option value="ds">Дыхательная система</option>
+              <option value="kz">Кожные заболевания</option>
+              <option value="spa">SPA</option>
+              <option value="stom">Стоматология</option>
+              <option value="obm">Обмен веществ</option>
+              <option value="ped">Педиатрия</option>
+              <option value="obsh">Общетерапевтический</option>
+            </select>
+            <div class="checkbox-inputs">              
+              <input type="checkbox" name="checkbox-group" value="climat-control"><p>Есть бассейн</p>
+              <input type="checkbox" name="checkbox-group" value="auto-parking"><p>Один из лучших</p>
+              <input type="checkbox" name="checkbox-group" value="TV"><p>Wi-Fi в номерах</p>
+              <input type="checkbox" name="checkbox-group" value="Wi-fi"><p>Принимают без лечения</p>
+              <input type="checkbox" name="checkbox-group" value="Wi-fi"><p>Парковка</p>
+            </div>
+          </form>
+
+        </div> 
+        </form>
+      </main>
+      <footer></footer>
+    </div>
+  </body>
+</html>
