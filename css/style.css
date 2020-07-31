@@ -3,17 +3,77 @@
   margin: 0;
   padding: 0;
 }
-
+header {
+  background-color: #fff;
+  position: fixed;
+  width: 95%;
+  top: 0;
+  padding-top: 0.4rem;
+}
+main {
+  margin-top: 6rem;
+}
 .wrapper {
   width: 95%;
   margin: 0 auto;
 }
+
 .logo-menu {
-  padding: 0.7rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.menu {
-  background-color: #fff;
+/** Intro **/
+.intro {
+  text-align: center;
+}
+.intro-head-text {
+  font-size: 1.4rem;
+  color: #65676d;
+}
+.intro-text {
+  margin: 2rem 0;
+  font-size: 1.7rem;
+  color: #008bc8;
+}
+
+/** search forms**/
+.simple-search {
+  margin: 1rem auto;
+  position: relative;
+}
+.simple-search-input {
+  width: 100%;
+  height: 2rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+.img-search {
+  position: absolute;
+  top: 20%;
+  right: 1%;
+}
+
+.search-form {
+  margin: 1rem auto;
+  width: 100%;
+  text-align: center;
+}
+.select-city,
+.select-profile {
+  width: 100%;
+  height: 2rem;
+  margin: 0.1rem 0;
+}
+.checkbox-item {
+  font-size: 1.2rem;
+}
+
+/** temp tests demo**/
+.test-demo1 {
+  background-color: blueviolet;
+  color: #fff;
+  font-size: 2rem;
+  width: 100%;
+  height: 5rem;
 }
