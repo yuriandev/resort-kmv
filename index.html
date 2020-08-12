@@ -21,7 +21,7 @@
       <main class="main">
         <div class="intro">
           <h2 class="intro-head-text">
-            Лечение и отдых в санаториях КавМинВод
+            Лечение и отдых в санаториях<br />КавМинВод
           </h2>
           <h1 class="intro-text">
             Помогаем выбирать правильные <br />санатории более 6 лет!
@@ -46,65 +46,87 @@
         <div class="search-form">
           <h3>Поиск санатория по параметрам</h3>
           <form id="FormSearchSans" action="#">
-            <select class="select-city" id="select-city">
-              <option selected disabled>Выберите город</option>
-              <option value="essentuki">Ессентуки</option>
-              <option value="geleznovock">Железноводск</option>
-              <option value="pyatigorsk">Пятигорск</option>
-              <option value="kislovodsk">Кисловодск</option>
-            </select>
-            <select class="select-profile" id="select-profile">
-              <option selected disabled>Выберите профиль</option>
-              <option value="gkt">Желудочно-кишечный тракт</option>
-              <option value="ods">Опорно-двигательная система</option>
-              <option value="gs">Желчевыводящая система</option>
-              <option value="sss">Сердечно-сосудистая система</option>
-              <option value="oft">Офтальмология</option>
-              <option value="ms">Мочеполовая система</option>
-              <option value="og">Ожирение/похудение</option>
-              <option value="zp">Заболевания печени</option>
-              <option value="ns">Нервная система</option>
-              <option value="uro">Урология</option>
-              <option value="sd">Сахарный диабет</option>
-              <option value="gin">Гинекология</option>
-              <option value="kms">Костно-мышечная система</option>
-              <option value="ps">Пищеварительная система</option>
-              <option value="es">Эндокринная система</option>
-              <option value="ims">Иммунная система</option>
-              <option value="alrg">Аллергология</option>
-              <option value="lor">ЛОР</option>
-              <option value="ds">Дыхательная система</option>
-              <option value="kz">Кожные заболевания</option>
-              <option value="spa">SPA</option>
-              <option value="stom">Стоматология</option>
-              <option value="obm">Обмен веществ</option>
-              <option value="ped">Педиатрия</option>
-              <option value="obsh">Общетерапевтический</option>
-            </select>
-            <div class="test-demo1">
-              Здесь будут inputs и double range slider.
+            <div class="select-container">
+              <select class="select-city" id="select-city">
+                <option selected disabled>Выберите город</option>
+                <option value="essentuki">Ессентуки</option>
+                <option value="geleznovock">Железноводск</option>
+                <option value="pyatigorsk">Пятигорск</option>
+                <option value="kislovodsk">Кисловодск</option>
+              </select>
+              <select class="select-profile" id="select-profile">
+                <option selected disabled>Выберите профиль</option>
+                <option value="gkt">Желудочно-кишечный тракт</option>
+                <option value="ods">Опорно-двигательная система</option>
+                <option value="gs">Желчевыводящая система</option>
+                <option value="sss">Сердечно-сосудистая система</option>
+                <option value="oft">Офтальмология</option>
+                <option value="ms">Мочеполовая система</option>
+                <option value="og">Ожирение/похудение</option>
+                <option value="zp">Заболевания печени</option>
+                <option value="ns">Нервная система</option>
+                <option value="uro">Урология</option>
+                <option value="sd">Сахарный диабет</option>
+                <option value="gin">Гинекология</option>
+                <option value="kms">Костно-мышечная система</option>
+                <option value="ps">Пищеварительная система</option>
+                <option value="es">Эндокринная система</option>
+                <option value="ims">Иммунная система</option>
+                <option value="alrg">Аллергология</option>
+                <option value="lor">ЛОР</option>
+                <option value="ds">Дыхательная система</option>
+                <option value="kz">Кожные заболевания</option>
+                <option value="spa">SPA</option>
+                <option value="stom">Стоматология</option>
+                <option value="obm">Обмен веществ</option>
+                <option value="ped">Педиатрия</option>
+                <option value="obsh">Общетерапевтический</option>
+              </select>
             </div>
+            <p>Стоимость путевки</p>
+
+            <div class="choice-price">
+              <div class="start-price">
+                <input type="number" id="min-price" placeholder="Цена от" />
+                <input
+                  type="range"
+                  name="max"
+                  id="min-price-range"
+                  min="0"
+                  max="39900"
+                  step="100"
+                />
+              </div>
+              <div class="end-price">
+                <input type="number" id="min-price" placeholder="Цена до" />
+                <input
+                  type="range"
+                  name="max"
+                  id="max-price-range"
+                  min="40000"
+                  max="100000"
+                  step="100"
+                />
+              </div>
+            </div>
+            <p>Дополнительно</p>
             <div class="checkboxes">
               <div class="checkbox-item">
                 <input id="pool" type="checkbox" value="pool" />
                 <label for="pool">Есть бассейн</label>
               </div>
-
               <div class="checkbox-item">
                 <input id="best" type="checkbox" value="best" />
                 <label for="best">Один из лучших</label>
               </div>
-
               <div class="checkbox-item">
                 <input id="wifi" type="checkbox" value="wifi" />
                 <label for="fifi">Wi-Fi в номерах</label>
               </div>
-
               <div class="checkbox-item">
                 <input id="nodocs" type="checkbox" value="no docs" />
                 <label for="nodocs">Принимают без лечения</label>
               </div>
-
               <div class="checkbox-item">
                 <input id="parking" type="checkbox" value="parking" />
                 <label for="parking">Парковка</label>
@@ -114,13 +136,18 @@
           </form>
         </div>
         <div class="manager">
-          <h2 class="manager-heading">Затрудняетесь с выбором?</h2>
+          <h3 class="manager-heading">Затрудняетесь с выбором?</h3>
           <p class="manager-text">
             Поможем сделать правильный выбор по вашему профилю лечения и
             бюджету!
           </p>
-          <form id="call-me">
-            <input type="tel" id="call-phone" placeholder="_(___) ___-__-__" />
+          <form class="call-me" id="call-me">
+            <input
+              class="call-me-number"
+              type="tel"
+              id="call-phone"
+              placeholder="_(___) ___-__-__"
+            />
             <button type="submit">Жду консультацию</button>
           </form>
         </div>

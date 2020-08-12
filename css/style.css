@@ -6,12 +6,18 @@
 header {
   background-color: #fff;
   position: fixed;
+  z-index: 100;
   width: 95%;
   top: 0;
   padding-top: 0.4rem;
 }
 main {
   margin-top: 6rem;
+}
+h1,
+h2,
+h3 {
+  text-align: center;
 }
 .wrapper {
   width: 95%;
@@ -24,9 +30,7 @@ main {
   align-items: center;
 }
 /** Intro **/
-.intro {
-  text-align: center;
-}
+
 .intro-head-text {
   font-size: 1.4rem;
   color: #65676d;
@@ -38,6 +42,7 @@ main {
 }
 
 /** search forms**/
+/* simple search */
 .simple-search {
   margin: 1rem auto;
   position: relative;
@@ -53,27 +58,79 @@ main {
   top: 20%;
   right: 1%;
 }
-
+/* search with params */
 .search-form {
   margin: 1rem auto;
   width: 100%;
   text-align: center;
 }
+.select-container {
+  display: flex;
+  justify-content: space-between;
+}
 .select-city,
 .select-profile {
-  width: 100%;
+  width: 49%;
   height: 2rem;
-  margin: 0.1rem 0;
+  margin: 0.5rem 0;
 }
 .checkbox-item {
   font-size: 1.2rem;
 }
 
-/** temp tests demo**/
-.test-demo1 {
-  background-color: blueviolet;
-  color: #fff;
-  font-size: 2rem;
+/* Choice price */
+.choice-price {
+  display: flex;
+  justify-content: space-between;
+}
+.start-price,
+.end-price {
+  width: 49%;
+}
+.start-price input,
+.end-price input {
   width: 100%;
-  height: 5rem;
+  margin: 0.2rem 0;
+}
+
+/* checkboxes */
+.checkboxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.checkbox-item {
+  width: 49%;
+  text-align: left;
+}
+
+/** manager help **/
+.manager {
+  text-align: center;
+}
+.call-me {
+  display: flex;
+  flex-direction: column;
+}
+.call-me-number {
+  width: 30%;
+  margin: 0 auto;
+}
+.call-me button {
+  width: 30%;
+  margin: 0 auto;
+}
+
+/** Advantages **/
+.advantages-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border: solid 1px blue;
+}
+.advantage-card {
+  width: 13rem;
+  border: 1px solid green;
+  margin: 0.5rem 0;
+  text-align: center;
 }
